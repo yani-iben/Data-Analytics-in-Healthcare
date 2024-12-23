@@ -14,7 +14,7 @@
 - **Descriptive Analytics:**  
   - Conducted **Cluster Analysis** to uncover **4 key patient personas** based on behavioral and clinical data.
 
-![Cluster Analysis Results](Cluster Analysis Results.png)
+![Cluster Analysis Results](Cluster%20Analysis%20Results.png)
 
 - **Prescriptive Analytics:**  
   - Developed actionable **recommendations** tailored to each persona, optimizing patient care strategies.  
