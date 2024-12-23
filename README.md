@@ -13,7 +13,7 @@
 
 - **Descriptive Analytics:**  
   - Conducted **Cluster Analysis** to uncover **4 key patient personas** based on behavioral and clinical data.
-![Diabetes Personas](images/diabetes_personas.png)
+![Cluster Analysis Results](Cluster Analysis Results.png)
 
 - **Prescriptive Analytics:**  
   - Developed actionable **recommendations** tailored to each persona, optimizing patient care strategies.  
