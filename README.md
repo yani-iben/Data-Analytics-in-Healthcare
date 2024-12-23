@@ -3,7 +3,12 @@
 ## Objectives  
 - **Enhance patient outcomes and satisfaction** through preventative measures to increase future profits.  
 - **Reduce potential penalties** linked to high readmission rates.  
-- Leverage **predictive analytics** to identify high-risk diabetic patients for targeted interventions.  
+- Leverage **predictive analytics** to identify high-risk diabetic patients for targeted interventions.
+
+## Steps Taken
+- Data Preprocessing using Excel to remove significant missing values and impute missing vaues
+- Descriptive Analytics initially in R
+- Multiple rounds of predictive modeling 
 
 ---
 
