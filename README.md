@@ -9,7 +9,8 @@
 
 ## Methods & Approach  
 - **Predictive Modeling:**  
-  - Implemented a **Random Forest Model** to predict readmission likelihood.  
+  - Implemented a **Random Forest Model** to predict readmission likelihood.
+![Model Performance](Model_Performance.png)
 
 - **Descriptive Analytics:**  
   - Conducted **Cluster Analysis** to uncover **4 key patient personas** based on behavioral and clinical data.
