@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="10.4.001">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="6.0.002" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="read_csv" compatibility="10.4.001" expanded="true" height="68" name="Read CSV" width="90" x="45" y="34">
+        <parameter key="csv_file" value="C:\Users\vnt5mk\Downloads\training_diabetes_nominal.csv"/>
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="true"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations">
+          <parameter key="0" value="Name"/>
+        </list>
+        <parameter key="time_zone" value="SYSTEM"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="windows-1252"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information">
+          <parameter key="0" value="race = Other.true.integer.attribute"/>
+          <parameter key="1" value="age = [0-10).true.integer.attribute"/>
+          <parameter key="2" value="age = [80-90).true.integer.attribute"/>
+          <parameter key="3" value="age = [90-100).true.integer.attribute"/>
+          <parameter key="4" value="diag_1 = 414.true.integer.attribute"/>
+          <parameter key="5" value="diag_1 = 428.true.integer.attribute"/>
+          <parameter key="6" value="diag_1 = 157.true.integer.attribute"/>
+          <parameter key="7" value="diag_1 = 410.true.integer.attribute"/>
+          <parameter key="8" value="diag_1 = 189.true.integer.attribute"/>
+          <parameter key="9" value="diag_1 = 432.true.integer.attribute"/>
+          <parameter key="10" value="diag_1 = 295.true.integer.attribute"/>
+          <parameter key="11" value="diag_1 = 250\.6.true.integer.attribute"/>
+          <parameter key="12" value="diag_1 = 722.true.integer.attribute"/>
+          <parameter key="13" value="diag_1 = 250\.11.true.integer.attribute"/>
+          <parameter key="14" value="diag_1 = 715.true.integer.attribute"/>
+          <parameter key="15" value="diag_1 = V58.true.integer.attribute"/>
+          <parameter key="16" value="diag_1 = 185.true.integer.attribute"/>
+          <parameter key="17" value="diag_1 = 491.true.integer.attribute"/>
+          <parameter key="18" value="diag_1 = 493.true.integer.attribute"/>
+          <parameter key="19" value="diag_1 = 625.true.integer.attribute"/>
+          <parameter key="20" value="diag_1 = 250\.41.true.integer.attribute"/>
+          <parameter key="21" value="diag_1 = 282.true.integer.attribute"/>
+          <parameter key="22" value="diag_1 = 592.true.integer.attribute"/>
+          <parameter key="23" value="diag_1 = 459.true.integer.attribute"/>
+          <parameter key="24" value="diag_1 = 220.true.integer.attribute"/>
+          <parameter key="25" value="diag_1 = 227.true.integer.attribute"/>
+          <parameter key="26" value="diag_1 = 540.true.integer.attribute"/>
+          <parameter key="27" value="diag_1 = 654.true.integer.attribute"/>
+          <parameter key="28" value="diag_1 = 799.true.integer.attribute"/>
+          <parameter key="29" value="diag_1 = 278.true.integer.attribute"/>
+          <parameter key="30" value="diag_1 = 850.true.integer.attribute"/>
+          <parameter key="31" value="diag_1 = 621.true.integer.attribute"/>
+          <parameter key="32" value="diag_1 = 233.true.integer.attribute"/>
+          <parameter key="33" value="diag_1 = 659.true.integer.attribute"/>
+          <parameter key="34" value="diag_1 = 425.true.integer.attribute"/>
+          <parameter key="35" value="diag_1 = 534.true.integer.attribute"/>
+          <parameter key="36" value="diag_2 = ?.true.integer.attribute"/>
+          <parameter key="37" value="diag_2 = 250.true.integer.attribute"/>
+          <parameter key="38" value="diag_2 = 403.true.integer.attribute"/>
+          <parameter key="39" value="diag_2 = 425.true.integer.attribute"/>
+          <parameter key="40" value="diag_2 = 401.true.integer.attribute"/>
+          <parameter key="41" value="diag_2 = 428.true.integer.attribute"/>
+          <parameter key="42" value="diag_2 = 585.true.integer.attribute"/>
+          <parameter key="43" value="diag_2 = 491.true.integer.attribute"/>
+          <parameter key="44" value="diag_2 = 250\.6.true.integer.attribute"/>
+          <parameter key="45" value="diag_2 = 648.true.integer.attribute"/>
+          <parameter key="46" value="diag_2 = 578.true.integer.attribute"/>
+          <parameter key="47" value="diag_2 = 250\.42.true.integer.attribute"/>
+          <parameter key="48" value="diag_2 = 250\.41.true.integer.attribute"/>
+          <parameter key="49" value="diag_2 = 250\.7.true.integer.attribute"/>
+          <parameter key="50" value="diag_2 = 416.true.integer.attribute"/>
+          <parameter key="51" value="diag_2 = 595.true.integer.attribute"/>
+          <parameter key="52" value="diag_2 = 218.true.integer.attribute"/>
+          <parameter key="53" value="diag_2 = 782.true.integer.attribute"/>
+          <parameter key="54" value="diag_2 = 348.true.integer.attribute"/>
+          <parameter key="55" value="diag_2 = 298.true.integer.attribute"/>
+          <parameter key="56" value="diag_2 = 516.true.integer.attribute"/>
+          <parameter key="57" value="diag_3 = ?.true.integer.attribute"/>
+          <parameter key="58" value="diag_3 = 403.true.integer.attribute"/>
+          <parameter key="59" value="diag_3 = 250.true.integer.attribute"/>
+          <parameter key="60" value="diag_3 = V45.true.integer.attribute"/>
+          <parameter key="61" value="diag_3 = 428.true.integer.attribute"/>
+          <parameter key="62" value="diag_3 = 401.true.integer.attribute"/>
+          <parameter key="63" value="diag_3 = 585.true.integer.attribute"/>
+          <parameter key="64" value="diag_3 = 305.true.integer.attribute"/>
+          <parameter key="65" value="diag_3 = 496.true.integer.attribute"/>
+          <parameter key="66" value="diag_3 = 581.true.integer.attribute"/>
+          <parameter key="67" value="diag_3 = 440.true.integer.attribute"/>
+          <parameter key="68" value="diag_3 = 272.true.integer.attribute"/>
+          <parameter key="69" value="diag_3 = 284.true.integer.attribute"/>
+          <parameter key="70" value="diag_3 = 348.true.integer.attribute"/>
+          <parameter key="71" value="diag_3 = 577.true.integer.attribute"/>
+          <parameter key="72" value="diag_3 = 441.true.integer.attribute"/>
+          <parameter key="73" value="diag_3 = E879.true.integer.attribute"/>
+          <parameter key="74" value="diag_3 = V12.true.integer.attribute"/>
+          <parameter key="75" value="max_glu_serum = None.true.integer.attribute"/>
+          <parameter key="76" value="metformin = No.true.integer.attribute"/>
+          <parameter key="77" value="glyburide = Steady.true.integer.attribute"/>
+          <parameter key="78" value="glyburide = Down.true.integer.attribute"/>
+          <parameter key="79" value="rosiglitazone = Steady.true.integer.attribute"/>
+          <parameter key="80" value="acarbose = No.true.integer.attribute"/>
+          <parameter key="81" value="acarbose = Steady.true.integer.attribute"/>
+          <parameter key="82" value="insulin = No.true.integer.attribute"/>
+          <parameter key="83" value="insulin = Up.true.integer.attribute"/>
+          <parameter key="84" value="insulin = Down.true.integer.attribute"/>
+          <parameter key="85" value="change = No.true.integer.attribute"/>
+          <parameter key="86" value="change = Ch.true.integer.attribute"/>
+          <parameter key="87" value="diabetesMed = No.true.integer.attribute"/>
+          <parameter key="88" value="diabetesMed = Yes.true.integer.attribute"/>
+          <parameter key="89" value="admission_type_id.true.integer.attribute"/>
+          <parameter key="90" value="discharge_disposition_id.true.integer.attribute"/>
+          <parameter key="91" value="admission_source_id.true.integer.attribute"/>
+          <parameter key="92" value="time_in_hospital.true.integer.attribute"/>
+          <parameter key="93" value="num_lab_procedures.true.integer.attribute"/>
+          <parameter key="94" value="num_procedures.true.integer.attribute"/>
+          <parameter key="95" value="num_medications.true.integer.attribute"/>
+          <parameter key="96" value="number_outpatient.true.integer.attribute"/>
+          <parameter key="97" value="number_emergency.true.integer.attribute"/>
+          <parameter key="98" value="number_inpatient.true.integer.attribute"/>
+          <parameter key="99" value="number_diagnoses.true.integer.attribute"/>
+          <parameter key="100" value="readmitted.true.binominal.attribute"/>
+        </list>
+        <parameter key="read_not_matching_values_as_missings" value="false"/>
+      </operator>
+      <operator activated="true" class="blending:set_role" compatibility="10.4.001" expanded="true" height="82" name="Set Role" width="90" x="179" y="34">
+        <list key="set_roles">
+          <parameter key="readmitted" value="label"/>
+        </list>
+      </operator>
+      <operator activated="true" class="normalize" compatibility="10.4.001" expanded="true" height="103" name="Normalize" width="90" x="313" y="34">
+        <parameter key="return_preprocessing_model" value="false"/>
+        <parameter key="attribute_filter_type" value="all"/>
+        <parameter key="attribute" value=""/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="numeric"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="real"/>
+        <parameter key="block_type" value="value_series"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="value_series_end"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="method" value="Z-transformation"/>
+        <parameter key="min" value="0.0"/>
+        <parameter key="max" value="1.0"/>
+        <parameter key="allow_negative_values" value="false"/>
+      </operator>
+      <operator activated="true" class="concurrency:parallel_random_forest" compatibility="9.4.000" expanded="true" height="103" name="Random Forest" width="90" x="447" y="30">
+        <parameter key="number_of_trees" value="100"/>
+        <parameter key="criterion" value="information_gain"/>
+        <parameter key="maximal_depth" value="16"/>
+        <parameter key="apply_pruning" value="true"/>
+        <parameter key="confidence" value="0.1"/>
+        <parameter key="apply_prepruning" value="true"/>
+        <parameter key="minimal_gain" value="1.0E-4"/>
+        <parameter key="minimal_leaf_size" value="2"/>
+        <parameter key="minimal_size_for_split" value="4"/>
+        <parameter key="number_of_prepruning_alternatives" value="3"/>
+        <parameter key="random_splits" value="false"/>
+        <parameter key="guess_subset_ratio" value="true"/>
+        <parameter key="subset_ratio" value="0.2"/>
+        <parameter key="voting_strategy" value="confidence vote"/>
+        <parameter key="use_local_random_seed" value="false"/>
+        <parameter key="local_random_seed" value="1992"/>
+        <parameter key="enable_parallel_execution" value="true"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="10.4.001" expanded="true" height="68" name="Read CSV (2)" width="90" x="45" y="238">
+        <parameter key="csv_file" value="C:\Users\vnt5mk\Downloads\testing_diabetes_nominal.csv"/>
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="true"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations">
+          <parameter key="0" value="Name"/>
+        </list>
+        <parameter key="time_zone" value="SYSTEM"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="windows-1252"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information">
+          <parameter key="0" value="race = Other.true.integer.attribute"/>
+          <parameter key="1" value="age = [0-10).true.integer.attribute"/>
+          <parameter key="2" value="age = [80-90).true.integer.attribute"/>
+          <parameter key="3" value="age = [90-100).true.integer.attribute"/>
+          <parameter key="4" value="diag_1 = 414.true.integer.attribute"/>
+          <parameter key="5" value="diag_1 = 428.true.integer.attribute"/>
+          <parameter key="6" value="diag_1 = 157.true.integer.attribute"/>
+          <parameter key="7" value="diag_1 = 410.true.integer.attribute"/>
+          <parameter key="8" value="diag_1 = 189.true.integer.attribute"/>
+          <parameter key="9" value="diag_1 = 432.true.integer.attribute"/>
+          <parameter key="10" value="diag_1 = 295.true.integer.attribute"/>
+          <parameter key="11" value="diag_1 = 250\.6.true.integer.attribute"/>
+          <parameter key="12" value="diag_1 = 722.true.integer.attribute"/>
+          <parameter key="13" value="diag_1 = 250\.11.true.integer.attribute"/>
+          <parameter key="14" value="diag_1 = 715.true.integer.attribute"/>
+          <parameter key="15" value="diag_1 = V58.true.integer.attribute"/>
+          <parameter key="16" value="diag_1 = 185.true.integer.attribute"/>
+          <parameter key="17" value="diag_1 = 491.true.integer.attribute"/>
+          <parameter key="18" value="diag_1 = 493.true.integer.attribute"/>
+          <parameter key="19" value="diag_1 = 625.true.integer.attribute"/>
+          <parameter key="20" value="diag_1 = 250\.41.true.integer.attribute"/>
+          <parameter key="21" value="diag_1 = 282.true.integer.attribute"/>
+          <parameter key="22" value="diag_1 = 592.true.integer.attribute"/>
+          <parameter key="23" value="diag_1 = 459.true.integer.attribute"/>
+          <parameter key="24" value="diag_1 = 220.true.integer.attribute"/>
+          <parameter key="25" value="diag_1 = 227.true.integer.attribute"/>
+          <parameter key="26" value="diag_1 = 540.true.integer.attribute"/>
+          <parameter key="27" value="diag_1 = 654.true.integer.attribute"/>
+          <parameter key="28" value="diag_1 = 799.true.integer.attribute"/>
+          <parameter key="29" value="diag_1 = 278.true.integer.attribute"/>
+          <parameter key="30" value="diag_1 = 850.true.integer.attribute"/>
+          <parameter key="31" value="diag_1 = 621.true.integer.attribute"/>
+          <parameter key="32" value="diag_1 = 233.true.integer.attribute"/>
+          <parameter key="33" value="diag_1 = 659.true.integer.attribute"/>
+          <parameter key="34" value="diag_1 = 425.true.integer.attribute"/>
+          <parameter key="35" value="diag_1 = 534.true.integer.attribute"/>
+          <parameter key="36" value="diag_2 = ?.true.integer.attribute"/>
+          <parameter key="37" value="diag_2 = 250.true.integer.attribute"/>
+          <parameter key="38" value="diag_2 = 403.true.integer.attribute"/>
+          <parameter key="39" value="diag_2 = 425.true.integer.attribute"/>
+          <parameter key="40" value="diag_2 = 401.true.integer.attribute"/>
+          <parameter key="41" value="diag_2 = 428.true.integer.attribute"/>
+          <parameter key="42" value="diag_2 = 585.true.integer.attribute"/>
+          <parameter key="43" value="diag_2 = 491.true.integer.attribute"/>
+          <parameter key="44" value="diag_2 = 250\.6.true.integer.attribute"/>
+          <parameter key="45" value="diag_2 = 648.true.integer.attribute"/>
+          <parameter key="46" value="diag_2 = 578.true.integer.attribute"/>
+          <parameter key="47" value="diag_2 = 250\.42.true.integer.attribute"/>
+          <parameter key="48" value="diag_2 = 250\.41.true.integer.attribute"/>
+          <parameter key="49" value="diag_2 = 250\.7.true.integer.attribute"/>
+          <parameter key="50" value="diag_2 = 416.true.integer.attribute"/>
+          <parameter key="51" value="diag_2 = 595.true.integer.attribute"/>
+          <parameter key="52" value="diag_2 = 218.true.integer.attribute"/>
+          <parameter key="53" value="diag_2 = 782.true.integer.attribute"/>
+          <parameter key="54" value="diag_2 = 348.true.integer.attribute"/>
+          <parameter key="55" value="diag_2 = 298.true.integer.attribute"/>
+          <parameter key="56" value="diag_2 = 516.true.integer.attribute"/>
+          <parameter key="57" value="diag_3 = ?.true.integer.attribute"/>
+          <parameter key="58" value="diag_3 = 403.true.integer.attribute"/>
+          <parameter key="59" value="diag_3 = 250.true.integer.attribute"/>
+          <parameter key="60" value="diag_3 = V45.true.integer.attribute"/>
+          <parameter key="61" value="diag_3 = 428.true.integer.attribute"/>
+          <parameter key="62" value="diag_3 = 401.true.integer.attribute"/>
+          <parameter key="63" value="diag_3 = 585.true.integer.attribute"/>
+          <parameter key="64" value="diag_3 = 305.true.integer.attribute"/>
+          <parameter key="65" value="diag_3 = 496.true.integer.attribute"/>
+          <parameter key="66" value="diag_3 = 581.true.integer.attribute"/>
+          <parameter key="67" value="diag_3 = 440.true.integer.attribute"/>
+          <parameter key="68" value="diag_3 = 272.true.integer.attribute"/>
+          <parameter key="69" value="diag_3 = 284.true.integer.attribute"/>
+          <parameter key="70" value="diag_3 = 348.true.integer.attribute"/>
+          <parameter key="71" value="diag_3 = 577.true.integer.attribute"/>
+          <parameter key="72" value="diag_3 = 441.true.integer.attribute"/>
+          <parameter key="73" value="diag_3 = E879.true.integer.attribute"/>
+          <parameter key="74" value="diag_3 = V12.true.integer.attribute"/>
+          <parameter key="75" value="max_glu_serum = None.true.integer.attribute"/>
+          <parameter key="76" value="metformin = No.true.integer.attribute"/>
+          <parameter key="77" value="glyburide = Steady.true.integer.attribute"/>
+          <parameter key="78" value="glyburide = Down.true.integer.attribute"/>
+          <parameter key="79" value="rosiglitazone = Steady.true.integer.attribute"/>
+          <parameter key="80" value="acarbose = No.true.integer.attribute"/>
+          <parameter key="81" value="acarbose = Steady.true.integer.attribute"/>
+          <parameter key="82" value="insulin = No.true.integer.attribute"/>
+          <parameter key="83" value="insulin = Up.true.integer.attribute"/>
+          <parameter key="84" value="insulin = Down.true.integer.attribute"/>
+          <parameter key="85" value="change = No.true.integer.attribute"/>
+          <parameter key="86" value="change = Ch.true.integer.attribute"/>
+          <parameter key="87" value="diabetesMed = No.true.integer.attribute"/>
+          <parameter key="88" value="diabetesMed = Yes.true.integer.attribute"/>
+          <parameter key="89" value="admission_type_id.true.integer.attribute"/>
+          <parameter key="90" value="discharge_disposition_id.true.integer.attribute"/>
+          <parameter key="91" value="admission_source_id.true.integer.attribute"/>
+          <parameter key="92" value="time_in_hospital.true.integer.attribute"/>
+          <parameter key="93" value="num_lab_procedures.true.integer.attribute"/>
+          <parameter key="94" value="num_procedures.true.integer.attribute"/>
+          <parameter key="95" value="num_medications.true.integer.attribute"/>
+          <parameter key="96" value="number_outpatient.true.integer.attribute"/>
+          <parameter key="97" value="number_emergency.true.integer.attribute"/>
+          <parameter key="98" value="number_inpatient.true.integer.attribute"/>
+          <parameter key="99" value="number_diagnoses.true.integer.attribute"/>
+          <parameter key="100" value="readmitted.true.binominal.attribute"/>
+        </list>
+        <parameter key="read_not_matching_values_as_missings" value="false"/>
+      </operator>
+      <operator activated="true" class="blending:set_role" compatibility="10.4.001" expanded="true" height="82" name="Set Role (2)" width="90" x="179" y="238">
+        <list key="set_roles">
+          <parameter key="readmitted" value="label"/>
+        </list>
+      </operator>
+      <operator activated="true" class="normalize" compatibility="10.4.001" expanded="true" height="103" name="Normalize (2)" width="90" x="313" y="238">
+        <parameter key="return_preprocessing_model" value="false"/>
+        <parameter key="attribute_filter_type" value="all"/>
+        <parameter key="attribute" value=""/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="numeric"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="real"/>
+        <parameter key="block_type" value="value_series"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="value_series_end"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="method" value="Z-transformation"/>
+        <parameter key="min" value="0.0"/>
+        <parameter key="max" value="1.0"/>
+        <parameter key="allow_negative_values" value="false"/>
+      </operator>
+      <operator activated="true" class="apply_model" compatibility="7.1.001" expanded="true" height="82" name="Apply Model (3)" width="90" x="581" y="120">
+        <list key="application_parameters"/>
+      </operator>
+      <operator activated="true" class="performance" compatibility="10.4.001" expanded="true" height="82" name="Performance (3)" width="90" x="715" y="30">
+        <parameter key="use_example_weights" value="true"/>
+      </operator>
+      <connect from_op="Read CSV" from_port="output" to_op="Set Role" to_port="example set input"/>
+      <connect from_op="Set Role" from_port="example set output" to_op="Normalize" to_port="example set input"/>
+      <connect from_op="Normalize" from_port="example set output" to_op="Random Forest" to_port="training set"/>
+      <connect from_op="Random Forest" from_port="model" to_op="Apply Model (3)" to_port="model"/>
+      <connect from_op="Read CSV (2)" from_port="output" to_op="Set Role (2)" to_port="example set input"/>
+      <connect from_op="Set Role (2)" from_port="example set output" to_op="Normalize (2)" to_port="example set input"/>
+      <connect from_op="Normalize (2)" from_port="example set output" to_op="Apply Model (3)" to_port="unlabelled data"/>
+      <connect from_op="Apply Model (3)" from_port="labelled data" to_op="Performance (3)" to_port="labelled data"/>
+      <connect from_op="Apply Model (3)" from_port="model" to_port="result 2"/>
+      <connect from_op="Performance (3)" from_port="performance" to_port="result 1"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+      <portSpacing port="sink_result 3" spacing="0"/>
+    </process>
+  </operator>
+</process>
