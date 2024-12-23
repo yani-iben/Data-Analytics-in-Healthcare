@@ -10,6 +10,8 @@
 ## Methods & Approach  
 - **Predictive Modeling:**  
   - Implemented a **Random Forest Model** to predict readmission likelihood.
+ 
+  
 ![Model Performance](Model_Performance.png)
 
 - **Descriptive Analytics:**  
