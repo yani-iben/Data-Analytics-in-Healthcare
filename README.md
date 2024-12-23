@@ -12,7 +12,8 @@
   - Implemented a **Random Forest Model** to predict readmission likelihood.  
 
 - **Descriptive Analytics:**  
-  - Conducted **Cluster Analysis** to uncover **4 key patient personas** based on behavioral and clinical data.  
+  - Conducted **Cluster Analysis** to uncover **4 key patient personas** based on behavioral and clinical data.
+![Diabetes Personas](images/diabetes_personas.png)
 
 - **Prescriptive Analytics:**  
   - Developed actionable **recommendations** tailored to each persona, optimizing patient care strategies.  
