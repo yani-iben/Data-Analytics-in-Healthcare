@@ -24,7 +24,7 @@
 - **Descriptive Analytics:**  
   - Conducted **Cluster Analysis** to uncover **4 key patient personas** based on behavioral and clinical data.
  
-  ![cluster analysis visualization](cluster analysis visualization.png)
+  ![cluster analysis visualization](cluster%20analysis%20visualization.png)
 
   - Highlighted the most common traits within each cluster
 
