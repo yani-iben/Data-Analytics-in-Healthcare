@@ -8,7 +8,9 @@
 ## Steps Taken
 - Data Preprocessing using Excel to remove significant missing values and impute missing vaues
 - Descriptive Analytics initially in R
-- Multiple rounds of predictive modeling 
+- Multiple rounds of predictive modeling
+- Provided persona-specific medical recommendations
+- Developed a cost matrix based on each persona's healthcare plan
 
 ---
 
